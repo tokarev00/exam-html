@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання №1</title>
+</head>
+<body>
+    <div class="description">
+        <h1>Земельні ділянки</h1>
+        <p>Тут ви можете вибрати, якщо заповните <a href="#form">форму</a></p>
+    <div>
+    <section class="table">
+        <table style="border-collapse: collapse; text-align: center;" border="1" cellpadding="20" >
+            <caption>Схема земельних ділянок</caption>
+            <tr>
+                <td rowspan="2">1</td>
+                <td rowspan="3">2</td>
+                <td>3</td>
+                <td colspan="4">4</td>
+                <td>5</td>
+                <td>6</td>
+                <td rowspan="2">7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td colspan="2">10</td>
+                <td>11</td>
+                <td colspan="2" rowspan="2">12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td colspan="2" rowspan="2">16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td colspan="2" rowspan="2">20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td rowspan="3">24</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td rowspan="2">26</td>
+                <td>27</td>
+                <td colspan="2">28</td>
+                <td>29</td>
+                <td>30</td>
+                <td rowspan="2">38</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+                <td>37</td>
+            </tr>
+        </table>
+    </section>
+    <section class="list">
+        <h2>Вільні земельні ділянки</h2>
+        <ol>
+            <li>Сідоров Олег Олегович</li>
+            <li>Порошенко Петро Олексійович</li>
+            <li>Ушаков Дмитро Ігорович</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </section>
+    <section class="form" id="form">
+        <h2 class="form__title">Форма для отримання інформації про земельну ділянку</h2>
+        <form action="POST">
+            <fieldset>
+                <legend>Вкажіть ваші данні:</legend>
+                <label>
+                    Ім'я:<br>
+                    <input type="text" placeholder="Вкажіть ваше ім'я">
+                </label>
+                <br>
+                <label>
+                    Завантажте фото вашого УБД:<br>
+                    <input type="file">
+                </label>
+                <br>
+                <label>
+                    Вкажіть номер земельної ділянки, яка вас зацікавила:<br>
+                    <input type="number" placeholder="номер ділянки">
+                </label>
+                <br>
+                <label>
+                    Вкажіть ваш телефон:<br>
+                    <input type="tel" placeholder="ваш номер телефону" value="+380">
+                </label>
+            </fieldset>
+            <br>
+            <button type="submit" formmethod="POST">Відправити</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <hr>
+        <address style="text-align: center;">сайт Держкадастру, розробник: Токарев Владислав</address>
+    </footer>
+</body>
+</html>

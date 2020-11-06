@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Евробляха</title>
+    </head>
+    <body>
+        <h2>Заявка на пільгове розмитнення автомобіля на іноземній реєстрації для ветеранів АТО</h2>
+        <form method="POST">
+            <fieldset>
+                <legend>
+                    Оберіть марку, тип і країну авто для розмитнення:
+                </legend>
+                <label>
+                    Oберіть бренд авто:<br>
+                    <select name="brand-car" id="brand-car" multiple>
+                        <option value="nissan">nissan</option>
+                        <option value="mazda">mazda</option>
+                        <option value="toyota">toyota</option>
+                        <option value="opel">opel</option>
+                        <option value="mercedes">mercedes</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Оберіть тип авто:<br>
+                    <select name="type-car" id="type-car" multiple>
+                        <option value="sedan">Седан</option>
+                        <option value="coupe">Купе</option>
+                        <option value="truck">Вантажівка</option>
+                        <option value="pickup">Пікап</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Оберіть країну:
+                    <br>
+                    <select name="country" id="country" multiple>
+                        <option value="Poland">Польша</option>
+                        <option value="Сzech">Чехія</option>
+                        <option value="Germany">Німечинна</option>
+                        <option value="Latvia">Латвія</option>
+                        <option value="Estonis">Естонія</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Персональні данні:
+                </legend>
+                <label>
+                    Вкажіть ваше ім'я:<br>
+                    <input type="text" name="name" placeholder="Ваше ім'я">
+                </label>
+                <br>
+                <label>
+                    Вкажіть ваше прізвище:<br>
+                    <input type="text" name="surname" placeholder="Ваше прізвище">
+                </label>
+                <br>
+                <lable>
+                    Вкажіть ваш номер телефону:<br>
+                    <input type="tel" name="tel" placeholder="Ваш телефон">
+                </lable>
+                <br>
+                <lable>
+                    Вкажіть серію та номер вашого посвідчення учасника бойових дій:<br>
+                    <input type="text" name="ubd" placeholder="серія і номер УБД">
+                </lable>
+                
+                <div>
+                    <div>Чи ви раніше завозили євробляхи?</div>
+                    <label>Так<input  type="radio" value="true" name="have-euro-car"></label>
+                    <label>Ні<input type="radio" value="false" name="have-euro-car"></label>
+                </div>
+            </fieldset>
+            <button type="submit" formmethod="POST">Відправити</button>
+            <br>
+            <button type="reset">Скинути</button>
+        </form>
+    </body>
+</html>

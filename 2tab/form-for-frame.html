@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Форма для завдання №4</title>
+    </head>
+    <body>
+        <h2>Форма для бажаючих приєднатися до ЗСУ</h2>
+        <form action="POST">
+            <fieldset>
+                <legend>Персональні данні:</legend>
+                <label>
+                    Ваше прізвище:<br>
+                    <input type="text" name="user-surname" placeholder="ваше прізвище">
+                </label>
+                <br>
+                <label>
+                    Ваше ім'я:<br>
+                    <input type="text" name="user-name" placeholder="ваше ім'я">
+                </label>
+                <br>
+                <label>
+                    Ваш вік:<br>
+                    <input type="number" name="user-age" placeholder="ваш вік">
+                </label>
+                <br>
+                <label>
+                    Завантажте фото УБД:<br>
+                    <input type="file" name="ubd">
+                </label>
+                <br>
+            </fieldset>
+            <button type="submit" formmethod="POST">Відправлення</button>
+        </form>
+    </body>
+</html>
